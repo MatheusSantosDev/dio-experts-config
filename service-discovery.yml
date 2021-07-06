@@ -1,12 +1,12 @@
-servidor :
-  porta : 9000
-eureka :
-  instância :
-    hostname : localhost
-  cliente :
-    registerWithEureka : true
-    fetchRegistry : false
-    serviceUrl :
-    defaultZone : http://${eureka.instance.hostname}:${server.port}/eureka/
-  servidor :
-    wait-time-in-ms-when-sync-empty : 3000
+server:
+  port: 9000
+eureka: 
+  instance: 
+    hostname: localhost
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl: 
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    wait-time-in-ms-when-sync-empty: 3000
